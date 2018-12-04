@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-echarts-lib": [
+        "dist/ngx-echarts-lib"
+      ],
+      "ngx-echarts-lib/*": [
+        "dist/ngx-echarts-lib/*"
+      ]
+    }
   }
 }

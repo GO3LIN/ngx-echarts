@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-baidu';
+
+  series = {
+    name: 'Hello world',
+    data: [ 1, 2, 3, 4, 2, 1]
+  };
 }
