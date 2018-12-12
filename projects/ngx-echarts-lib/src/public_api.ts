@@ -2,5 +2,5 @@
  * Public API Surface of ngx-echarts-lib
  */
 
-export * from './lib/line-chart/line-chart.module';
-export * from './lib/line-chart/line-chart.component';
+export * from './lib/ngx-echarts-lib.module';
+export * from './lib/ngx-echarts-lib.component';

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { LineChartModule } from 'ngx-echarts-lib';
+import { NgxEchartsLibModule } from 'ngx-echarts-lib';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    LineChartModule
+    NgxEchartsLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

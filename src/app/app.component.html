@@ -5,6 +5,5 @@
 
 <h2>Line chart</h2>
 <div style="width: 800px; height: 600px;">
-  <ne-line-chart [option]="option" (ready)="chartReady($event)"></ne-line-chart>
+  <ne-chart [option]="option" (ready)="chartReady($event)" [renderer]="'canvas'"></ne-chart>
 </div>
-
