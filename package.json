@@ -1,15 +1,19 @@
 {
   "name": "ngx-baidu",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build ngx-echarts-lib",
+    "readme": "cp README.md dist/ngx-echarts-lib",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lib": "ng build ngx-echarts-lib --watch",
-    "pack": "cd dist/ngx-echarts-lib && npm pack"
+    "lib": "npm run build:lib -- --watch",
+    "pack": "cd dist/ngx-echarts-lib && npm pack",
+    "npm": "npm run build:lib && npm run readme && npm run pack",
+    "publish": "npm run npm && npm publish ./dist/ngx-echarts-lib/ngx-echarts-lib-0.1.2.tgz"
   },
   "private": true,
   "dependencies": {
